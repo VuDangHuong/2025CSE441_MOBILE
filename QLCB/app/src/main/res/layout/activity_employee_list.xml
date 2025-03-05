@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- Nút sắp xếp A-Z -->
+    <Button
+        android:id="@+id/btn_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sắp xếp A-Z"/>
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Tìm kiếm..."
+        android:iconifiedByDefault="false"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:layout_marginTop="4dp"
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quay lai"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/cardview_dark_background"/>
+</LinearLayout>
